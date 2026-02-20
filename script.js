@@ -1,6 +1,6 @@
 (function () {
-  const phoneDisplay = '(800) XXX-XXXX';
-  const phoneTel = 'tel:+1800XXXXXXX';
+  const phoneDisplay = '(844) 833-1956';
+  const phoneTel = 'tel:+18448331956';
 
   const SERVICE_MAP = {
     'ac-repair': {
