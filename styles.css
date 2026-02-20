@@ -92,7 +92,7 @@ a{color:inherit}
   min-height:100svh;
   display:flex;
   align-items:stretch;
-  padding-top:72px;
+  padding-top:0;
 }
 
 .hero__bg{
