@@ -18,305 +18,284 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="24/7 Emergency Heating &amp; Furnace Repair | Licensed HVAC Pros">
 <meta property="og:description" content="Furnace not working? Emergency heating repair 24/7. Licensed &amp; insured. Call now.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1604014238170-4def1e19b8d9?auto=format&fit=crop&w=1200&q=80">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../hvac-theme.css">
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"LocalBusiness",
-  "name":"24/7 Emergency Heating & Furnace Repair",
-  "telephone":"+1-844-833-1956",
-  "url":"https://example.com/emergency-heating-repair",
-  "areaServed":"United States",
-  "openingHours":"Mo-Su 00:00-23:59",
-  "priceRange":"$$",
-  "description":"Emergency furnace and heating repair service available 24/7. Licensed and insured HVAC technicians."
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        'cta-blue': '#007BFF',
+        'cta-hover': '#0056D2',
+        'navy': '#1A1A2E',
+        'navy-deep': '#111127',
+        'txt': '#333333',
+        'blue-bg': '#E8F4FD',
+        'gray-bg': '#F0F4F8',
+      },
+      fontFamily: {
+        sans: ['Inter','system-ui','sans-serif'],
+      }
+    }
+  }
 }
 </script>
+<style>
+html{scroll-behavior:smooth}
+.chev{display:flex;align-items:flex-start;padding:9px 12px;border-radius:8px;background:#F8FAFF;border:1px solid #E8EFFF;font-size:.93rem;line-height:1.5}
+.chev::before{content:'\203A';font-weight:800;color:#007BFF;margin-right:10px;font-size:1.2em;flex-shrink:0;line-height:1.4}
+.chk::before{content:'\2713';font-weight:700;color:#22c55e;margin-right:10px}
+.chk-w{display:flex;align-items:center}
+.chk-w::before{content:'\2713';font-weight:700;color:#22c55e;margin-right:10px;flex-shrink:0}
+.rv-star{width:18px;height:18px;background:#00B67A;border-radius:2px;display:flex;align-items:center;justify-content:center}
+.rv-star svg{width:10px;height:10px;fill:#fff}
+.sec-div{border:none;border-top:1px solid #EEF2FF;margin:0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"24/7 Emergency Heating & Furnace Repair","telephone":"(844) 833-1956","url":"https://ilyesbkd.github.io/hvac/emergency-heating-repair","priceRange":"$$","description":"Emergency furnace and heating repair service available 24/7. Licensed and insured HVAC technicians."}
+</script>
 </head>
-<body>
+<body class="font-sans text-txt bg-white">
 
-<!-- HEADER -->
-<header class="header">
-  <a href="../" class="header__logo">
-    <img src="../logo.png" alt="HVAC Pros 24/7">
-  </a>
-  <a href="tel:+18448331956" class="header__call swap-target">
-    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
-    Call Now — Free
-  </a>
+<!-- TOP BAR -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50" style="height:56px;overflow:visible">
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-4 h-full">
+    <a href="../" class="flex items-center h-full">
+      <img src="../logo.png" alt="HVAC Pros 24/7" style="height:99px;width:auto;object-fit:contain;display:block">
+    </a>
+    <a href="tel:+18448331956" class="flex items-center gap-2 text-cta-blue font-bold text-sm md:text-base hover:underline">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+      (844) 833-1956
+    </a>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero__badge">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="#10B981"/><circle cx="12" cy="12" r="10" stroke="#10B981" stroke-width="2" opacity=".4"/></svg>
-    Serving <span class="geo" id="geo-headline">Your Area</span> — 24/7 Emergency Heating Service
-  </div>
-  <h1 data-dtr="h1">24/7 Emergency Heating &amp; Furnace Repair</h1>
-  <p class="hero__sub" data-dtr="sub">No Heat? We Provide Fast, 24/7 Furnace &amp; Heating Repair. Licensed &amp; Insured.</p>
-
-  <div class="hero__phone">
-    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
-    <a href="tel:+18448331956" class="swap-target phone-display">(844) 833-1956</a>
-  </div>
-
-  <a href="tel:+18448331956" class="cta-main swap-target" data-dtr="cta">📞 Call Now – Emergency Heating Repair</a>
-  <p style="margin-top:10px;font-size:.75rem;color:rgba(255,255,255,.55)">Licensed &amp; Insured · Fast Response · All Brands</p>
-
-  <div class="hero__trust">
-    <div class="trust-tag">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#10B981"/></svg>
-      Licensed &amp; Insured
+<!-- SECTION 1: DARK HEADER -->
+<section class="bg-navy text-white px-4 py-6 md:py-10">
+  <div class="max-w-3xl mx-auto text-center">
+    <h1 class="text-3xl md:text-5xl font-black leading-tight mb-3">24/7 Emergency Heating &amp; Furnace Repair</h1>
+    <p class="text-base md:text-xl text-gray-300 mb-4">No Heat? Call Us Now For Fast, 24/7 Furnace &amp; Heating Repair!</p>
+    <a href="tel:+18448331956" class="block w-full md:w-auto md:inline-block bg-cta-blue hover:bg-cta-hover text-white font-black text-xl md:text-2xl py-4 px-10 rounded-xl transition-all mb-4 tracking-wide" style="box-shadow:0 6px 24px rgba(0,123,255,.45)">
+      📞 Call (844) 833-1956
+    </a>
+    <div class="flex justify-center gap-1.5 mb-4">
+      <div style="width:36px;height:36px;background:#00B67A;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+      <div style="width:36px;height:36px;background:#00B67A;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+      <div style="width:36px;height:36px;background:#00B67A;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+      <div style="width:36px;height:36px;background:#00B67A;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+      <div style="width:36px;height:36px;background:#00B67A;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
     </div>
-    <div class="trust-tag">
-      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#10B981" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
-      Fast Response Time
+    <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-left max-w-lg mx-auto text-sm">
+      <div class="chk-w text-gray-200">Licensed &amp; Insured Techs</div>
+      <div class="chk-w text-gray-200">Fast Response, 7 Days a Week</div>
+      <div class="chk-w text-gray-200">Up-Front Pricing, No Obligation</div>
+      <div class="chk-w text-gray-200">All Heating Systems &amp; Brands</div>
     </div>
-    <div class="trust-tag">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#10B981"/></svg>
-      Safety First
-    </div>
-  </div>
-  <div class="trustpilot-badge">
-    <div class="trustpilot-badge__logo">
-      <svg viewBox="0 0 24 24" fill="#00b67a"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg>
-      Trustpilot
-    </div>
-    <div class="trustpilot-badge__stars">
-      <span><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></span>
-      <span><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></span>
-      <span><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></span>
-      <span><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></span>
-      <span><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></span>
-    </div>
-    <div class="trustpilot-badge__text">5/5 &mdash; Excellent</div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services">
-  <div class="section-label">Heating Services</div>
-  <h2 class="section-title">Emergency Heating &amp; Furnace Services</h2>
-  <p class="section-sub">Serving <span class="geo-text">Your Local Area</span> &amp; Surrounding Areas</p>
-
-  <div class="services__category">Fast, Safe, Professional</div>
-  <div class="services__grid">
-    <div class="service-card">
-      <div class="service-card__icon hvac">
-        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-      </div>
-      <span>Furnace Won't Start</span>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon hvac">
-        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
-      </div>
-      <span>Furnace Repair</span>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon hvac">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-      </div>
-      <span>No Heat / Cold Air</span>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon hvac">
-        <svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zM8 6h8v2H8V6z"/></svg>
-      </div>
-      <span>Thermostat Issues</span>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon hvac">
-        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
-      </div>
-      <span>Pilot Light Out</span>
-    </div>
-    <div class="service-card">
-      <div class="service-card__icon hvac">
-        <svg viewBox="0 0 24 24"><path d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z"/></svg>
-      </div>
-      <span>Strange Noises</span>
-    </div>
-  </div>
-
-  <a href="tel:+18448331956" class="cta-main cta-main--blue swap-target" style="margin-top:8px">📞 Call Now – Furnace Emergency</a>
+<!-- HERO IMAGE -->
+<section class="w-full">
+  <img src="../acceuil.webp" alt="Emergency heating repair technician" class="w-full h-64 md:h-96 object-cover object-top">
 </section>
 
+<!-- EMERGENCY HEATING SERVICES -->
+<section class="bg-white px-4 py-12 md:py-16">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-navy mb-3 leading-snug">Emergency <span class="text-cta-blue">Heating &amp; Furnace</span> Services</h2>
+    <p class="leading-relaxed text-gray-600 mb-7">Whether your furnace won't start, is blowing cold air, or making strange noises, our licensed technicians are ready to diagnose and fix the problem fast.</p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-7">
+      <li class="chev">Furnace Won't Start</li>
+      <li class="chev">Furnace Repair</li>
+      <li class="chev">No Heat / Cold Air</li>
+      <li class="chev">Thermostat Issues</li>
+      <li class="chev">Pilot Light Out</li>
+      <li class="chev">Strange Noises</li>
+      <li class="chev">Gas Valve Problems</li>
+      <li class="chev">Heat Exchanger Issues</li>
+    </ul>
+    <p class="leading-relaxed text-gray-600">Don't freeze — call our team at <a href="tel:+18448331956" class="text-cta-blue font-bold hover:underline">(844) 833-1956</a> for immediate furnace repair.</p>
+  </div>
+</section>
+
+<hr class="sec-div">
 <!-- HOW IT WORKS -->
-<section class="how">
-  <div class="section-label">How It Works</div>
-  <h2 class="section-title">3 Simple Steps</h2>
-  <p class="section-sub">From your call to warm air — fast.</p>
-  <div class="how__steps">
-    <div class="how__step">
-      <div class="how__num">1</div>
-      <div class="how__step-text">
-        <h3>Call Us 24/7</h3>
-        <p>Tell our live dispatcher about your heating issue. We prioritize no-heat emergencies.</p>
+<section class="bg-white px-4 py-12 md:py-16">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-extrabold text-navy mb-8 text-center">3 Simple Steps to Warm Air</h3>
+    <div class="space-y-5 max-w-md mx-auto">
+      <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cta-blue text-white flex items-center justify-center font-bold text-lg">1</div>
+        <div>
+          <p class="font-bold text-navy">Call Us 24/7</p>
+          <p class="text-sm leading-relaxed text-gray-600">Tell our live dispatcher about your heating issue. We prioritize no-heat emergencies.</p>
+        </div>
       </div>
-    </div>
-    <div class="how__step">
-      <div class="how__num">2</div>
-      <div class="how__step-text">
-        <h3>Technician Diagnoses</h3>
-        <p>A licensed heating tech arrives, inspects your furnace, and explains the issue clearly.</p>
+      <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cta-blue text-white flex items-center justify-center font-bold text-lg">2</div>
+        <div>
+          <p class="font-bold text-navy">Technician Diagnoses</p>
+          <p class="text-sm leading-relaxed text-gray-600">A licensed heating tech arrives, inspects your furnace, and explains the issue clearly.</p>
+        </div>
       </div>
-    </div>
-    <div class="how__step">
-      <div class="how__num">3</div>
-      <div class="how__step-text">
-        <h3>Heat Restored</h3>
-        <p>We repair your furnace on-site whenever possible. Your home is warm again.</p>
+      <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cta-blue text-white flex items-center justify-center font-bold text-lg">3</div>
+        <div>
+          <p class="font-bold text-navy">Heat Restored</p>
+          <p class="text-sm leading-relaxed text-gray-600">We repair your furnace on-site whenever possible. Your home is warm again.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- WHY CHOOSE US -->
-<section class="why">
-  <div class="section-label">Why Us</div>
-  <h2 class="section-title">Why Choose Our Heating Repair Service?</h2>
-  <p class="section-sub">#1 Rated in <span class="geo-text">Your Local Area</span></p>
-  <div class="why__list">
-    <div class="why__item">
-      <div class="why__icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#fff"/></svg>
+<section class="bg-blue-bg px-4 py-12 md:py-16">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-extrabold text-navy mb-6">Why Choose Our Heating Repair Service?</h3>
+    <ul class="space-y-3 mb-8">
+      <li class="chk"><strong>Licensed &amp; Insured Technicians</strong> — Certified heating pros, background-checked and fully insured</li>
+      <li class="chk"><strong>24/7 Emergency Dispatch</strong> — No heat in the middle of the night? We answer and dispatch immediately</li>
+      <li class="chk"><strong>Your Family's Safety First</strong> — Gas leak checks, CO monitoring, and safe furnace operation</li>
+      <li class="chk"><strong>Satisfaction Guaranteed</strong> — Upfront pricing and honest work, every time</li>
+      <li class="chk"><strong>All Heating Systems</strong> — Furnaces, boilers, heat pumps, and more</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="sec-div">
+<!-- REVIEWS -->
+<section class="bg-white px-4 py-12 md:py-16">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-extrabold text-navy mb-6">What Homeowners Say</h3>
+    <div class="space-y-5">
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+        <div class="flex gap-1.5 mb-4">
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+        </div>
+        <p class="italic leading-relaxed mb-3 text-gray-700">"Furnace died at 2am in January. They came out within an hour and had it running before sunrise. Incredible."</p>
+        <p class="font-bold text-navy text-sm">— David K.</p>
       </div>
-      <div class="why__text">
-        <h3>Licensed &amp; Insured Technicians</h3>
-        <p>Certified heating pros. Background-checked and fully insured for your peace of mind.</p>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+        <div class="flex gap-1.5 mb-4">
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+        </div>
+        <p class="italic leading-relaxed mb-3 text-gray-700">"Honest pricing, no surprises. The tech explained everything clearly and fixed the issue fast. Highly recommend."</p>
+        <p class="font-bold text-navy text-sm">— Jennifer T.</p>
       </div>
-    </div>
-    <div class="why__item">
-      <div class="why__icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="2" fill="none"/><path d="M12 6v6l4 2" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
-      </div>
-      <div class="why__text">
-        <h3>24/7 Emergency Dispatch</h3>
-        <p>No heat in the middle of the night? We answer and dispatch immediately — always.</p>
-      </div>
-    </div>
-    <div class="why__item">
-      <div class="why__icon">
-        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#fff"/></svg>
-      </div>
-      <div class="why__text">
-        <h3>Your Family's Safety First</h3>
-        <p>Gas leak checks, CO monitoring, and safe furnace operation — every time.</p>
-      </div>
-    </div>
-    <div class="why__item">
-      <div class="why__icon">
-        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 16l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z" fill="#fff"/></svg>
-      </div>
-      <div class="why__text">
-        <h3>Satisfaction Guaranteed</h3>
-        <p>We stand behind every furnace repair with upfront pricing and honest work.</p>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+        <div class="flex gap-1.5 mb-4">
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+          <div class="rv-star"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 8.9H24l-7.5 5.5 2.9 8.9L12 20l-7.4 5.3 2.9-8.9L0 10.9h9.1z"/></svg></div>
+        </div>
+        <p class="italic leading-relaxed mb-3 text-gray-700">"Our furnace was blowing cold air. They diagnosed a bad ignitor and replaced it on the spot. House was warm in an hour."</p>
+        <p class="font-bold text-navy text-sm">— Robert P.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="section-label">Reviews</div>
-  <h2 class="section-title">What Homeowners Say</h2>
-  <p class="section-sub">Real results from real customers.</p>
-  <div class="testimonials__grid">
-    <div class="testimonial">
-      <div class="testimonial__stars">★★★★★</div>
-      <blockquote>"Furnace died at 2am in January. They came out within an hour and had it running before sunrise. Incredible."</blockquote>
-      <cite>— David K., Homeowner</cite>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial__stars">★★★★★</div>
-      <blockquote>"Honest pricing, no surprises. The tech explained everything clearly and fixed the issue fast. Highly recommend."</blockquote>
-      <cite>— Jennifer T., Homeowner</cite>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial__stars">★★★★★</div>
-      <blockquote>"Our furnace was blowing cold air. They diagnosed a bad ignitor and replaced it on the spot. House was warm in an hour."</blockquote>
-      <cite>— Robert P., Homeowner</cite>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE AREA -->
-<section class="area">
-  <div class="section-label">Service Area</div>
-  <h2 class="section-title">Serving <span class="geo-text">Your Local Area</span></h2>
-  <p class="area__text">We provide emergency heating and furnace repair throughout <span class="geo-text">Your Local Area</span> and all surrounding communities. Don't let a cold night become dangerous — our licensed technicians are ready to restore warmth to your home fast.</p>
-</section>
-
+<hr class="sec-div">
 <!-- FAQ -->
-<section class="faq">
-  <div class="section-label">FAQ</div>
-  <h2 class="section-title">Frequently Asked Questions</h2>
-  <p class="section-sub">Quick answers about emergency heating repair.</p>
-  <div class="faq__list">
-    <div class="faq__item">
-      <div class="faq__q">My furnace won't turn on. What should I do?</div>
-      <div class="faq__a">Check your thermostat settings and circuit breaker first. If those are fine, call us immediately — it could be a faulty ignitor, gas valve, or control board.</div>
-    </div>
-    <div class="faq__item">
-      <div class="faq__q">Is a furnace blowing cold air dangerous?</div>
-      <div class="faq__a">It depends on the cause. A cracked heat exchanger can leak carbon monoxide. If you smell gas or suspect CO, leave the house and call us right away.</div>
-    </div>
-    <div class="faq__item">
-      <div class="faq__q">How fast can you get here?</div>
-      <div class="faq__a">We typically dispatch a licensed heating technician within 60 minutes. No-heat emergencies are our top priority.</div>
-    </div>
-    <div class="faq__item">
-      <div class="faq__q">Do you repair all furnace brands?</div>
-      <div class="faq__a">Yes. Our technicians service Carrier, Lennox, Trane, Goodman, Rheem, Bryant, York, and all other major brands.</div>
-    </div>
-    <div class="faq__item">
-      <div class="faq__q">What if the furnace needs to be replaced?</div>
-      <div class="faq__a">We'll give you an honest assessment. If replacement makes more sense than repair, we provide a free quote for a new, energy-efficient system.</div>
-    </div>
-    <div class="faq__item">
-      <div class="faq__q">Do you charge extra for after-hours service?</div>
-      <div class="faq__a">We offer transparent pricing. Rates may vary for emergency calls, but we always provide upfront costs before starting any work.</div>
+<section class="bg-white px-4 py-12 md:py-16">
+  <div class="max-w-3xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-extrabold text-navy mb-6">Frequently Asked Questions</h3>
+    <div class="space-y-4">
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <p class="font-bold text-navy mb-2">My furnace won't turn on. What should I do?</p>
+        <p class="text-sm leading-relaxed text-gray-600">Check your thermostat settings and circuit breaker first. If those are fine, call us immediately — it could be a faulty ignitor, gas valve, or control board.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <p class="font-bold text-navy mb-2">Is a furnace blowing cold air dangerous?</p>
+        <p class="text-sm leading-relaxed text-gray-600">It depends on the cause. A cracked heat exchanger can leak carbon monoxide. If you smell gas or suspect CO, leave the house and call us right away.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <p class="font-bold text-navy mb-2">How fast can you get here?</p>
+        <p class="text-sm leading-relaxed text-gray-600">We typically dispatch a licensed heating technician within 60 minutes. No-heat emergencies are our top priority.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <p class="font-bold text-navy mb-2">Do you repair all furnace systems?</p>
+        <p class="text-sm leading-relaxed text-gray-600">Yes. Our technicians service all major furnace and heating systems including gas, electric, oil furnaces, boilers, and heat pumps.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <p class="font-bold text-navy mb-2">What if the furnace needs to be replaced?</p>
+        <p class="text-sm leading-relaxed text-gray-600">We'll give you an honest assessment. If replacement makes more sense than repair, we provide a free quote for a new, energy-efficient system.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+        <p class="font-bold text-navy mb-2">Do you charge extra for after-hours service?</p>
+        <p class="text-sm leading-relaxed text-gray-600">We offer transparent pricing. Rates may vary for emergency calls, but we always provide upfront costs before starting any work.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SECOND CTA -->
-<section class="cta-section">
-  <div class="section-label">Act Now</div>
-  <h2>Don't Freeze — Get Heat Now</h2>
-  <p>Heating problems are dangerous. Call now for immediate furnace repair.</p>
-  <a href="tel:+18448331956" class="cta-phone swap-target phone-display">(844) 833-1956</a>
-  <a href="tel:+18448331956" class="cta-main swap-target">📞 Call Now – Emergency Heating Repair</a>
-  <p style="margin-top:14px;font-size:.75rem;color:rgba(255,255,255,.5)">Licensed &amp; Insured · No Hidden Fees</p>
+<!-- PRE-FOOTER CTA -->
+<section class="bg-navy text-white px-4 py-14 md:py-20 text-center">
+  <h2 class="text-2xl md:text-4xl font-black mb-3">Don't Freeze — Get Heat Now</h2>
+  <p class="text-gray-400 text-lg mb-2">Heating problems are dangerous.</p>
+  <p class="text-gray-300 text-lg mb-6">Call us 24/7 <a href="tel:+18448331956" class="text-cta-blue font-bold hover:underline">(844) 833-1956</a></p>
+  <a href="tel:+18448331956" class="inline-block bg-cta-blue hover:bg-cta-hover text-white font-black text-xl py-5 px-12 rounded-xl transition-all mb-8" style="box-shadow:0 6px 24px rgba(0,123,255,.45)">
+    📞 Call Now — 24/7
+  </a>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>&copy; 2026 HVAC Pros — All Rights Reserved.</p>
-  <p><strong>Disclaimer:</strong> This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</p>
+<footer class="bg-navy-deep border-t border-gray-800 px-4 py-10">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-sm">
+      <div>
+        <h4 class="text-white font-bold mb-3">Company</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="../" class="hover:text-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-3">Services</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="../emergency-ac-repair/" class="hover:text-white transition">AC Repair</a></li>
+          <li><a href="../emergency-heating-repair/" class="hover:text-white transition">Heating Repair</a></li>
+          <li><a href="../emergency-hvac-repair/" class="hover:text-white transition">HVAC Repair</a></li>
+          <li><a href="../hvac-installation-replacement/" class="hover:text-white transition">Installation</a></li>
+          <li><a href="../hvac-maintenance-tune-up/" class="hover:text-white transition">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="col-span-2">
+        <h4 class="text-white font-bold mb-3">Contact</h4>
+        <p class="text-gray-400 mb-2">Available 24/7 for emergency service</p>
+        <a href="tel:+18448331956" class="text-cta-blue font-bold text-lg hover:underline">(844) 833-1956</a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6">
+      <p class="text-gray-500 text-xs leading-relaxed mb-4"><strong>Disclaimer:</strong> This site is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</p>
+      <p class="text-gray-600 text-xs text-center">&copy; 2026 HVAC Pros 24/7 — All Rights Reserved.</p>
+    </div>
+  </div>
 </footer>
 
-<!-- STICKY BOTTOM BAR -->
-<div class="bottom-bar">
-  <a href="tel:+18448331956" class="swap-target">
-    <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
-    TAP TO CALL — <span class="phone-display">(844) 833-1956</span>
+<!-- STICKY BOTTOM CTA (MOBILE ONLY) -->
+<div class="fixed bottom-0 left-0 right-0 bg-cta-blue z-50 md:hidden shadow-[0_-4px_20px_rgba(0,0,0,.25)]">
+  <a href="tel:+18448331956" class="flex items-center justify-center gap-3 py-3.5 px-4 text-white font-bold text-sm">
+    <span>Emergency Heating Repair</span>
+    <span class="text-white/70">&#8594;</span>
+    <span>Call 24/7 (844) 833-1956</span>
   </a>
 </div>
-
-<!-- FAQ Toggle + DTR -->
-<script>
-document.querySelectorAll('.faq__q').forEach(function(q){
-  q.addEventListener('click',function(){this.parentElement.classList.toggle('open')});
-});
-</script>
-<script src="../hvac-dtr.js" defer></script>
+<div class="h-14 md:hidden"></div>
 
 </body>
 </html>
