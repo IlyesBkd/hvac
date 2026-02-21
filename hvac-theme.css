@@ -7,9 +7,10 @@
 
 :root{
   /* ── Palette ── */
-  --color-bg:#F5F7FB;
-  --color-surface:#EEF1F6;
-  --color-border:#E2E8F0;
+  --color-bg:#C8D2E2;
+  --color-surface:#D6DCE8;
+  --color-card:#FFFFFF;
+  --color-border:#B8C4D6;
 
   --color-primary:#1D4ED8;
   --color-primary-dark:#1E40AF;
@@ -56,9 +57,8 @@ img{max-width:100%;display:block}
   overflow:visible;
 }
 .header__logo img{
-  height:76px !important;
+  height:114px !important;
   width:auto !important;
-  transform:translateY(0);
   object-fit:contain;
 }
 .header__logo svg{width:28px;height:28px;fill:var(--color-primary)}
@@ -154,7 +154,7 @@ img{max-width:100%;display:block}
 .services__category::before,.services__category::after{content:'';height:1px;width:28px;background:var(--color-border)}
 .services__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:400px;margin:0 auto 28px}
 .service-card{
-  background:var(--color-surface);border-radius:var(--radius);
+  background:var(--color-card);border-radius:var(--radius);
   padding:18px 10px 16px;border:1px solid var(--color-border);
   box-shadow:var(--shadow-soft);
   display:flex;flex-direction:column;align-items:center;gap:10px;
@@ -173,7 +173,7 @@ img{max-width:100%;display:block}
 .why__list{max-width:440px;margin:0 auto;text-align:left;display:flex;flex-direction:column;gap:12px}
 .why__item{
   display:flex;align-items:center;gap:14px;
-  background:var(--color-bg);border-radius:var(--radius);
+  background:var(--color-card);border-radius:var(--radius);
   padding:16px 18px;border:1px solid var(--color-border);
 }
 .why__icon{width:44px;height:44px;border-radius:12px;background:var(--color-primary);display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -198,7 +198,7 @@ img{max-width:100%;display:block}
 .testimonials{padding:44px 20px;background:var(--color-surface);text-align:center}
 .testimonials__grid{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .testimonial{
-  background:var(--color-bg);border-radius:var(--radius);
+  background:var(--color-card);border-radius:var(--radius);
   padding:18px;border:1px solid var(--color-border);text-align:left;
 }
 .testimonial__stars{color:#f59e0b;font-size:.85rem;margin-bottom:6px;letter-spacing:1px}
@@ -226,7 +226,7 @@ img{max-width:100%;display:block}
 /* ── BENEFITS GRID (install / maintenance pages) ── */
 .benefits{padding:44px 20px;background:var(--color-surface);text-align:center}
 .benefits__grid{max-width:440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.benefit{background:var(--color-bg);border-radius:var(--radius);padding:18px 14px;border:1px solid var(--color-border);text-align:center}
+.benefit{background:var(--color-card);border-radius:var(--radius);padding:18px 14px;border:1px solid var(--color-border);text-align:center}
 .benefit__icon{font-size:1.6rem;margin-bottom:6px}
 .benefit h3{font-size:.85rem;font-weight:800;color:var(--color-heading);margin-bottom:4px}
 .benefit p{font-size:.75rem;color:var(--color-text);font-weight:400}
@@ -257,7 +257,7 @@ img{max-width:100%;display:block}
 .home-services{padding:44px 20px;background:var(--color-bg);text-align:center}
 .home-services__grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:0 auto 28px}
 .home-service-card{
-  background:var(--color-surface);border-radius:var(--radius);
+  background:var(--color-card);border-radius:var(--radius);
   padding:22px 14px 18px;border:1px solid var(--color-border);
   box-shadow:var(--shadow-soft);
   display:flex;flex-direction:column;align-items:center;gap:10px;
