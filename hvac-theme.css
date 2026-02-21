@@ -132,6 +132,26 @@ img{max-width:100%;display:block}
 }
 .cta-main--blue:active,.cta-main--blue:hover{background:var(--color-primary-dark)}
 
+/* ── TRUSTPILOT BADGE ── */
+.trustpilot-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);
+  border-radius:50px;padding:8px 18px;margin-top:16px;
+}
+.trustpilot-badge__logo{
+  font-size:.78rem;font-weight:800;color:#fff;letter-spacing:.2px;
+  display:flex;align-items:center;gap:5px;
+}
+.trustpilot-badge__logo svg{width:18px;height:18px;flex-shrink:0}
+.trustpilot-badge__stars{display:flex;gap:2px}
+.trustpilot-badge__stars span{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:18px;height:18px;border-radius:3px;
+  background:#00b67a;
+}
+.trustpilot-badge__stars span svg{width:11px;height:11px;fill:#fff}
+.trustpilot-badge__text{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.85);white-space:nowrap}
+
 /* ── TRUST TAGS ── */
 .hero__trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
 .trust-tag{
