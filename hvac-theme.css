@@ -8,7 +8,7 @@
 :root{
   /* ── Palette ── */
   --color-bg:#F5F7FB;
-  --color-surface:#FFFFFF;
+  --color-surface:#EEF1F6;
   --color-border:#E2E8F0;
 
   --color-primary:#1D4ED8;
@@ -50,7 +50,17 @@ img{max-width:100%;display:block}
   border-bottom:1px solid var(--color-border);
   box-shadow:0 2px 12px rgba(15,23,42,.06);
 }
-.header__logo{font-size:1.1rem;font-weight:900;color:var(--color-heading);display:flex;align-items:center;gap:8px}
+.header__logo{
+  font-size:1.1rem;font-weight:900;color:var(--color-heading);
+  display:flex;align-items:center;gap:8px;
+  overflow:visible;
+}
+.header__logo img{
+  height:76px !important;
+  width:auto !important;
+  transform:translateY(0);
+  object-fit:contain;
+}
 .header__logo svg{width:28px;height:28px;fill:var(--color-primary)}
 .header__call{
   display:flex;align-items:center;gap:7px;
