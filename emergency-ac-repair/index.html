@@ -23,125 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --dark:#1a1a2e;--dark2:#16213e;
-  --accent:#e63946;--accent-dark:#c5303c;--accent-glow:rgba(230,57,70,.4);
-  --emerald:#06d6a0;--emerald-dark:#05b88a;
-  --white:#ffffff;--off-white:#f8f9fc;--light:#eef1f6;
-  --gray:#7c8498;--gray-dark:#4a5068;
-  --radius:16px;
-  --shadow:0 14px 40px rgba(0,0,0,.16);--shadow-soft:0 8px 24px rgba(0,0,0,.10);
-  --font:'Inter',system-ui,-apple-system,sans-serif;
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--font);color:var(--dark);background:var(--white);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:72px}
-a{text-decoration:none;color:inherit}
-a:focus-visible{outline:3px solid rgba(6,214,160,.55);outline-offset:3px;border-radius:12px}
-img{max-width:100%;display:block}
-
-.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(26,26,46,.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.06)}
-.header__logo{height:44px;width:auto;font-size:1.1rem;font-weight:900;color:var(--white);display:flex;align-items:center;gap:8px}
-.header__logo svg{width:28px;height:28px;fill:var(--emerald)}
-.header__call{display:flex;align-items:center;gap:7px;background:var(--accent);color:var(--white);font-weight:700;font-size:.88rem;letter-spacing:.3px;padding:10px 20px;border-radius:50px;box-shadow:0 4px 16px var(--accent-glow);transition:transform .15s,background .2s}
-.header__call:active{background:var(--accent-dark);transform:scale(.96)}
-.header__call svg{width:16px;height:16px;fill:var(--white);flex-shrink:0}
-
-.hero{padding:120px 18px 26px;background:var(--dark);background-image:radial-gradient(ellipse at 50% 0%,rgba(230,57,70,.12) 0%,transparent 60%);color:var(--white);text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 80%,rgba(6,214,160,.06) 0%,transparent 50%);pointer-events:none}
-.hero__badge{display:inline-flex;align-items:center;gap:7px;background:rgba(6,214,160,.12);border:1px solid rgba(6,214,160,.25);border-radius:50px;padding:7px 16px;font-size:.75rem;font-weight:700;margin-bottom:10px;color:var(--emerald);letter-spacing:.3px}
-.hero h1{font-size:1.75rem;font-weight:900;line-height:1.16;margin-bottom:8px;letter-spacing:-.3px}
-.hero h1 .geo{color:var(--emerald)}
-.hero__sub{font-size:1rem;color:rgba(255,255,255,.68);margin-bottom:12px;max-width:520px;margin-left:auto;margin-right:auto;font-weight:400}
-.hero__phone{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:14px}
-.hero__phone a{font-size:1.9rem;font-weight:900;color:var(--white);letter-spacing:1px;text-shadow:0 2px 20px rgba(230,57,70,.4);transition:color .2s}
-.hero__phone a:active{color:var(--emerald)}
-.hero__phone svg{width:28px;height:28px;fill:var(--accent);flex-shrink:0;animation:ring 1.5s ease-in-out infinite}
-@keyframes ring{0%,100%{transform:rotate(0)}10%{transform:rotate(14deg)}20%{transform:rotate(-12deg)}30%{transform:rotate(10deg)}40%{transform:rotate(-6deg)}50%{transform:rotate(0)}}
-.cta-main{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--accent) 0%,#ff4d5a 55%,var(--accent-dark) 100%);color:var(--white);font-size:1.08rem;font-weight:900;letter-spacing:.2px;padding:16px 22px;border-radius:999px;box-shadow:0 12px 36px rgba(230,57,70,.38);animation:pulse 2s infinite;width:100%;max-width:380px;transition:transform .15s,filter .2s}
-.cta-main:active{transform:scale(.97);filter:brightness(.98)}
-@keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent-glow)}70%{box-shadow:0 0 0 20px rgba(230,57,70,0)}100%{box-shadow:0 0 0 0 rgba(230,57,70,0)}}
-.hero__trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:14px}
-.trust-tag{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);border-radius:50px;padding:7px 14px;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.8)}
-.trust-tag svg{width:15px;height:15px;flex-shrink:0}
-
-.services{padding:44px 20px;background:var(--off-white);text-align:center}
-.section-label{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
-.section-title{font-size:1.4rem;font-weight:900;margin-bottom:4px;color:var(--dark);letter-spacing:-.3px}
-.section-sub{font-size:.88rem;color:var(--gray);margin-bottom:28px;font-weight:400}
-.services__category{font-size:.72rem;font-weight:700;color:var(--gray-dark);text-transform:uppercase;letter-spacing:1.8px;margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px}
-.services__category::before,.services__category::after{content:'';height:1px;width:28px;background:rgba(0,0,0,.1)}
-.services__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:400px;margin:0 auto 28px}
-.service-card{background:var(--white);border-radius:var(--radius);padding:18px 10px 16px;border:1px solid rgba(0,0,0,.06);box-shadow:0 10px 30px rgba(17,17,34,.06);display:flex;flex-direction:column;align-items:center;gap:10px;transition:transform .18s,box-shadow .18s,border-color .18s}
-.service-card:active{transform:translateY(1px) scale(.99);box-shadow:0 8px 22px rgba(17,17,34,.08);border-color:rgba(6,214,160,.22)}
-.service-card__icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.service-card__icon.hvac{background:rgba(6,214,160,.1)}
-.service-card__icon.hvac svg{fill:var(--emerald)}
-.service-card__icon svg{width:26px;height:26px}
-.service-card span{font-size:.78rem;font-weight:700;color:var(--dark)}
-
-.why{padding:44px 20px;text-align:center}
-.why__list{max-width:440px;margin:0 auto;text-align:left;display:flex;flex-direction:column;gap:12px}
-.why__item{display:flex;align-items:center;gap:14px;background:var(--off-white);border-radius:var(--radius);padding:16px 18px;border:1px solid rgba(0,0,0,.04)}
-.why__icon{width:44px;height:44px;border-radius:12px;background:var(--dark);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.why__icon svg{width:20px;height:20px;fill:var(--emerald)}
-.why__text h3{font-size:.9rem;font-weight:700;margin-bottom:1px;color:var(--dark)}
-.why__text p{font-size:.78rem;color:var(--gray);font-weight:400}
-
-/* How it works */
-.how{padding:44px 20px;background:var(--off-white);text-align:center}
-.how__steps{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
-.how__step{display:flex;align-items:flex-start;gap:14px;text-align:left}
-.how__num{width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1rem;flex-shrink:0}
-.how__step-text h3{font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:2px}
-.how__step-text p{font-size:.78rem;color:var(--gray);font-weight:400}
-
-/* Testimonials */
-.testimonials{padding:44px 20px;text-align:center}
-.testimonials__grid{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.testimonial{background:var(--off-white);border-radius:var(--radius);padding:18px;border:1px solid rgba(0,0,0,.04);text-align:left}
-.testimonial__stars{color:#f59e0b;font-size:.85rem;margin-bottom:6px;letter-spacing:1px}
-.testimonial blockquote{font-size:.88rem;font-weight:600;color:var(--dark);margin-bottom:8px;font-style:normal}
-.testimonial cite{font-size:.75rem;color:var(--gray);font-style:normal;font-weight:600}
-
-/* FAQ */
-.faq{padding:44px 20px;background:var(--off-white);text-align:center}
-.faq__list{max-width:500px;margin:0 auto;text-align:left}
-.faq__item{border-bottom:1px solid rgba(0,0,0,.06);padding:16px 0}
-.faq__item:last-child{border-bottom:none}
-.faq__q{font-size:.9rem;font-weight:800;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.faq__q::after{content:'+';font-size:1.2rem;font-weight:700;color:var(--accent);flex-shrink:0;transition:transform .2s}
-.faq__item.open .faq__q::after{transform:rotate(45deg)}
-.faq__a{font-size:.82rem;color:var(--gray);line-height:1.6;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding-top:0}
-.faq__item.open .faq__a{max-height:300px;padding-top:10px}
-
-/* Service Area */
-.area{padding:44px 20px;text-align:center}
-.area__text{max-width:500px;margin:0 auto;font-size:.88rem;color:var(--gray);line-height:1.65}
-
-.cta-section{padding:44px 20px;background:var(--dark);background-image:radial-gradient(ellipse at 50% 100%,rgba(230,57,70,.1) 0%,transparent 60%);text-align:center;color:var(--white);position:relative}
-.cta-section h2{font-size:1.35rem;font-weight:900;margin-bottom:8px;letter-spacing:-.3px}
-.cta-section p{font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:22px;font-weight:400}
-.cta-section .cta-phone{display:block;font-size:1.6rem;font-weight:900;color:var(--emerald);margin-bottom:18px;letter-spacing:.5px}
-
-.footer{padding:32px 20px;background:#111122;color:rgba(255,255,255,.4);text-align:center;font-size:.68rem;line-height:1.65}
-.footer strong{color:rgba(255,255,255,.6)}
-.footer p+p{margin-top:14px}
-
-.bottom-bar{position:fixed;bottom:0;left:0;right:0;z-index:1000;background:var(--accent);padding:0;box-shadow:0 -4px 24px rgba(230,57,70,.35)}
-.bottom-bar a{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--white);font-weight:800;font-size:1.05rem;letter-spacing:.3px;width:100%;padding:16px;transition:background .2s}
-.bottom-bar a:active{background:var(--accent-dark)}
-.bottom-bar svg{width:20px;height:20px;fill:var(--white);flex-shrink:0}
-
-@media(min-width:600px){
-  .hero h1{font-size:2.4rem}
-  .hero__phone a{font-size:2.35rem}
-  .services__grid{grid-template-columns:repeat(3,1fr);max-width:520px}
-  .cta-main{max-width:420px}
-  .cta-section .cta-phone{font-size:2rem}
-}
-</style>
+<link rel="stylesheet" href="../hvac-theme.css">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -160,9 +42,8 @@ img{max-width:100%;display:block}
 
 <!-- HEADER -->
 <header class="header">
-  <a href="#" class="header__logo">
-    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-    HVAC Pros 24/7
+  <a href="../" class="header__logo">
+    <img src="../logo.png" alt="HVAC Pros 24/7" style="height:38px;width:auto;display:block">
   </a>
   <a href="tel:+18448331956" class="header__call swap-target">
     <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
@@ -173,7 +54,7 @@ img{max-width:100%;display:block}
 <!-- HERO -->
 <section class="hero">
   <div class="hero__badge">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="#06d6a0"/><circle cx="12" cy="12" r="10" stroke="#06d6a0" stroke-width="2" opacity=".4"/></svg>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" fill="#10B981"/><circle cx="12" cy="12" r="10" stroke="#10B981" stroke-width="2" opacity=".4"/></svg>
     Serving <span class="geo" id="geo-headline">Your Area</span> — 24/7 Emergency AC Service
   </div>
   <h1 data-dtr="h1">24/7 Emergency AC Repair Near You</h1>
@@ -185,18 +66,19 @@ img{max-width:100%;display:block}
   </div>
 
   <a href="tel:+18448331956" class="cta-main swap-target" data-dtr="cta">📞 Call Now – 24/7 AC Repair</a>
+  <p style="margin-top:10px;font-size:.75rem;color:rgba(255,255,255,.55)">Licensed &amp; Insured · Fast Response · All Brands</p>
 
   <div class="hero__trust">
     <div class="trust-tag">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#06d6a0"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#10B981"/></svg>
       Licensed &amp; Insured
     </div>
     <div class="trust-tag">
-      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#06d6a0" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#06d6a0" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#10B981" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
       Fast Response Time
     </div>
     <div class="trust-tag">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#06d6a0"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#10B981"/></svg>
       Satisfaction Guaranteed
     </div>
   </div>
@@ -248,7 +130,7 @@ img{max-width:100%;display:block}
     </div>
   </div>
 
-  <a href="tel:+18448331956" class="cta-main swap-target" style="margin-top:8px">📞 Call Now – Free AC Diagnosis</a>
+  <a href="tel:+18448331956" class="cta-main cta-main--blue swap-target" style="margin-top:8px">📞 Call Now – Free AC Diagnosis</a>
 </section>
 
 <!-- HOW IT WORKS -->
@@ -289,7 +171,7 @@ img{max-width:100%;display:block}
   <div class="why__list">
     <div class="why__item">
       <div class="why__icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#06d6a0"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#fff"/></svg>
       </div>
       <div class="why__text">
         <h3>Licensed &amp; Insured Technicians</h3>
@@ -298,7 +180,7 @@ img{max-width:100%;display:block}
     </div>
     <div class="why__item">
       <div class="why__icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#06d6a0" stroke-width="2" fill="none"/><path d="M12 6v6l4 2" stroke="#06d6a0" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="2" fill="none"/><path d="M12 6v6l4 2" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
       </div>
       <div class="why__text">
         <h3>24/7 Emergency Response</h3>
@@ -307,7 +189,7 @@ img{max-width:100%;display:block}
     </div>
     <div class="why__item">
       <div class="why__icon">
-        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#06d6a0"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#fff"/></svg>
       </div>
       <div class="why__text">
         <h3>Safe for Your Home &amp; Family</h3>
@@ -316,7 +198,7 @@ img{max-width:100%;display:block}
     </div>
     <div class="why__item">
       <div class="why__icon">
-        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 16l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z" fill="#06d6a0"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 16l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z" fill="#fff"/></svg>
       </div>
       <div class="why__text">
         <h3>Satisfaction Guaranteed</h3>
@@ -392,11 +274,12 @@ img{max-width:100%;display:block}
 
 <!-- SECOND CTA -->
 <section class="cta-section">
-  <div class="section-label" style="color:var(--emerald)">Act Now</div>
+  <div class="section-label">Act Now</div>
   <h2>Don't Suffer in the Heat</h2>
   <p>AC problems get worse fast. Call now for immediate emergency repair.</p>
   <a href="tel:+18448331956" class="cta-phone swap-target phone-display">(844) 833-1956</a>
   <a href="tel:+18448331956" class="cta-main swap-target">📞 Call Now – 24/7 AC Repair</a>
+  <p style="margin-top:14px;font-size:.75rem;color:rgba(255,255,255,.5)">Licensed &amp; Insured · No Hidden Fees</p>
 </section>
 
 <!-- FOOTER -->
